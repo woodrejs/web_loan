@@ -1,0 +1,1063 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 65px;
+  line-height: 67px;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  max-width: 900px;
+  min-height: auto;
+  margin-bottom: 10px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #261f1f;
+  line-height: 22px;
+}
+
+.mysection {
+  width: 100%;
+}
+
+.mysection.homesection {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/img/HERO_IMG.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.mysection.callussection {
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mysection.aboutsection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f5f5f5;
+}
+
+.mysection.phonesection {
+  background-color: #fff;
+}
+
+.mysection.offer_section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #72a5ba;
+}
+
+.mysection.signsection {
+  background-color: #fff;
+}
+
+.mysection.testimonialssection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border: 1px none #000;
+  background-color: #f5f5f5;
+}
+
+.mysection.contactsection {
+  background-color: #f5f5f5;
+}
+
+.mysection.navsection {
+  position: fixed;
+  z-index: 1000;
+}
+
+.mycontainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
+
+.mycontainer.homecontainer {
+  position: relative;
+}
+
+.mycontainer.calluscontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mycontainer.phonecontainer {
+  padding: 0px;
+}
+
+.mycontainer.signcontainer {
+  padding: 0px;
+}
+
+.mycontainer.contactcontainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-style: solid none;
+  border-width: 1px;
+  border-color: rgba(38, 31, 31, 0.4);
+}
+
+.mycontainer.navcontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav {
+  min-height: auto;
+  display: flex;
+}
+
+.sociallink {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  padding-top: 23px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #261f1f;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.navlink {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #261f1f;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.home_contentbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px;
+  padding-left: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home_title {
+  margin-bottom: 60px;
+  color: #261f1f;
+  font-size: 75px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.home_btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #261f1f;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.logo {
+  position: static;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: 0%;
+  cursor: pointer;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.hamburger {
+  display: none;
+}
+
+.body {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.callus_contentbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.callus_title {
+  display: block;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #261f1f;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.callus_btn {
+  display: block;
+  width: 120px;
+  height: 35px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #132740;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.callus_btn.contact_btn {
+  margin-top: 40px;
+  background-color: #132740;
+  width: 100%;
+}
+
+.about_contentbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.about_title {
+  margin-bottom: 20px;
+  color: #261f1f;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+}
+
+.grid {
+  height: auto;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.phone_imgbox {
+  height: 60vh;
+  background-image: url("../assets/img/IMG1.jpg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.phone_imgbox.phone_imgbox--right {
+  background-image: url("../assets/img/IMG2.jpg");
+}
+
+.phone_contentbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.phone_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.phone_text {
+  max-width: 300px;
+  margin-bottom: 40px;
+  color: #261f1f;
+  text-align: center;
+}
+
+.phone_number {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #261f1f;
+  text-align: center;
+}
+
+.image {
+  padding-bottom: 20px;
+}
+
+.offer_title {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  color: #f5f5f5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offer_productsbox {
+  padding: 50px 0px;
+  grid-column-gap: 65px;
+  grid-row-gap: 39px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.offer_product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  text-align: center;
+}
+
+.offer_producttitle {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #f5f5f5;
+  text-transform: uppercase;
+}
+
+.sign_gridbox {
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.sign_contentbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sign_imgbox {
+  height: 60vh;
+  background-image: url("../assets/img/sign_img.jpg");
+  background-position: 0px 0px;
+  background-size: auto;
+}
+
+.sign_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sign_title {
+  margin-bottom: 20px;
+  color: #261f1f;
+  text-align: center;
+}
+
+.sign_text {
+  margin-bottom: 40px;
+  color: #261f1f;
+  text-align: center;
+}
+
+.sign_btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #132740;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.testimonials_gridbox {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  grid-column-gap: 65px;
+  grid-row-gap: 39px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.testimonial_signature {
+  color: rgba(38, 31, 31, 0.6);
+  text-align: center;
+}
+
+.testimonial_title {
+  font-style: italic;
+  text-align: center;
+}
+
+.contact_gridbox {
+  padding-right: 150px;
+  padding-left: 150px;
+  grid-column-gap: 120px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.contact_contentbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact_title {
+  margin-bottom: 20px;
+  color: #261f1f;
+  text-align: center;
+}
+
+.contact_text {
+  text-align: center;
+}
+
+.contact_addressitem {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #261f1f;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.contact_formlabel {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #261f1f;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.footer_copywriter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.contact_forminput {
+  color: #261f1f;
+}
+
+.form-block {
+  display: block;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.callus_input {
+  height: 35px;
+  max-width: 300px;
+  margin: 0px 20px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.contacct_addresslabel {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+  .mysection.homesection {
+    background-position: 66% 50%;
+  }
+
+  .mycontainer.homecontainer {
+    position: relative;
+  }
+
+  .mycontainer.phonecontainer {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .mycontainer.signcontainer {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .sociallink {
+    left: 20px;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: #f5f5f5;
+    font-weight: 700;
+  }
+
+  .navlink {
+    padding-right: 0px;
+    padding-left: 60px;
+  }
+
+  .home_title {
+    font-size: 55px;
+    line-height: 57px;
+  }
+
+  .hamburgerbox {
+    display: none;
+  }
+
+  .callus_title {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .callus_btn.contact_btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .grid {
+    height: auto;
+    grid-row-gap: 0px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .phone_imgbox {
+    height: 50vh;
+    background-image: url("../assets/img/IMG11.jpg");
+    background-position: 50% 0%;
+  }
+
+  .phone_imgbox.phone_imgbox--right {
+    display: none;
+  }
+
+  .phone_contentbox {
+    height: 50vh;
+  }
+
+  .sign_gridbox {
+    grid-row-gap: 0px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .sign_contentbox {
+    height: 55vh;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .sign_imgbox {
+    height: 55vh;
+    background-position: 50% 0%;
+  }
+
+  .testimonials_gridbox {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .contact_gridbox {
+    padding-right: 100px;
+    padding-left: 100px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .contact_addressitem {
+    text-align: center;
+  }
+
+  .contact_forminput {
+    color: #261f1f;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mysection.homesection {
+    background-position: 80% 50%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .sociallink {
+    padding-right: 20px;
+  }
+
+  .home_title {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburgerbox {
+    display: block;
+  }
+
+  .callus_title {
+    text-align: center;
+  }
+
+  .offer_productsbox {
+    padding-right: 20px;
+    padding-left: 20px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .sign_contentbox {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .contact_gridbox {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .callus_input {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .mysection.homesection {
+    background-position: 76% 50%;
+  }
+
+  .mysection.callussection {
+    height: auto;
+  }
+
+  .mysection.aboutsection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .mysection.offer_section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .mysection.testimonialssection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .mycontainer.offercontainer {
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .mycontainer.contactcontainer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .sociallink {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .home_title {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .callus_contentbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .callus_title {
+    margin-bottom: 20px;
+  }
+
+  .about_contentbox {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .grid {
+    height: auto;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .phone_imgbox {
+    background-image: url("../assets/img/IMG1.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .phone_contentbox {
+    height: 50vh;
+  }
+
+  .offer_productsbox {
+    padding-right: 0px;
+    padding-left: 0px;
+    grid-column-gap: 11px;
+  }
+
+  .sign_contentbox {
+    height: auto;
+    min-height: 55vh;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .sign_imgbox {
+    background-image: url("../assets/img/sign_img_portraite.jpg");
+    background-position: 34% 42%;
+    background-size: cover;
+  }
+
+  .testimonials_gridbox {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .contact_gridbox {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .callus_input {
+    margin-bottom: 10px;
+  }
+}
+
+#w-node-_5ca2ee66-ac34-81a7-5f58-8f8a9e81b36b-2a37df68 {
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+}
+
+@media screen and (max-width: 991px) {
+  #w-node-_24024f25-c51b-2245-f8c5-6a086da19556-2a37df68 {
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 3;
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+  }
+
+  #w-node-_9bbbe160-a146-7730-414e-5b09c5ff3433-2a37df68 {
+    -ms-grid-column-span: 1;
+    grid-column-end: 2;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+  }
+}
