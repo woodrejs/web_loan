@@ -1,10 +1,13 @@
 import React from "react";
+//utils
+import { motion } from "framer-motion";
+import { variantsItem } from "../../utils/framerMotion";
 
 const OfferItem = ({ name }) => {
   return (
-    <div className="offer_product">
+    <motion.div className="offer_product" variants={variantsItem}>
       <h5 className="offer_producttitle" children={name} />
-    </div>
+    </motion.div>
   );
 };
 export default OfferItem;

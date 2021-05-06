@@ -12,8 +12,6 @@ const CallUs = () => {
     triggerOnce: true,
   });
 
-  console.log(inView);
-
   return (
     <div className="mysection callussection" ref={ref}>
       <motion.div

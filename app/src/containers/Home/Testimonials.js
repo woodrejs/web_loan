@@ -3,17 +3,24 @@ import React from "react";
 import Testimonial from "../../components/Home/Testimonial";
 //utils
 import { motion } from "framer-motion";
-import { variantsGoUp } from "../../utils/framerMotion";
+import { variantsContainer } from "../../utils/framerMotion";
+import { useInView } from "react-intersection-observer";
 
 const Testimonials = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
+
   return (
     <div className="mysection testimonialssection">
       <div className="mycontainer testimonialscontainer">
         <motion.div
+          ref={ref}
           className="w-layout-grid testimonials_gridbox"
+          variants={variantsContainer}
           initial="hidden"
-          animate="visible"
-          variants={variantsGoUp}
+          animate={inView ? "visible" : "hidden"}
         >
           <Testimonial
             user="user name"

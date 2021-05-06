@@ -21,3 +21,16 @@ export const variantsBtns = {
     boxShadow: "2px 2px 5px 0px rgba(0,0,0,0.55)",
   },
 };
+export const variantsItem = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+export const variantsContainer = {
+  hidden: { opacity: 0 },
+  visible: (custom = 0.2) => ({
+    opacity: 1,
+    transition: {
+      staggerChildren: custom,
+    },
+  }),
+};

@@ -574,6 +574,7 @@ p {
 }
 
 .sign_btn {
+  font-weight: bold;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
