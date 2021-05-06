@@ -2,15 +2,22 @@ import React from "react";
 //utils
 import { motion } from "framer-motion";
 import { variantsGoUp } from "../../utils/framerMotion";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
+
   return (
     <div id="about" className="mysection aboutsection">
       <div className="mycontainer aboutcontainer">
         <motion.div
+          ref={ref}
           className="about_contentbox"
           initial="hidden"
-          animate="visible"
+          animate={inView ? "visible" : "hidden"}
           variants={variantsGoUp}
         >
           <h3 className="about_title">

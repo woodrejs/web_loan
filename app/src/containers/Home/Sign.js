@@ -2,8 +2,13 @@ import React from "react";
 //utils
 import { motion } from "framer-motion";
 import { variantsGoUp, variantsBtns } from "../../utils/framerMotion";
+import { useInView } from "react-intersection-observer";
 
 const Sign = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
   return (
     <div className="mysection signsection">
       <div className="mycontainer signcontainer">
@@ -11,9 +16,10 @@ const Sign = () => {
           <div className="sign_imgbox" />
           <div className="sign_contentbox">
             <motion.div
+              ref={ref}
               className="sign_content"
               initial="hidden"
-              animate="visible"
+              animate={inView ? "visible" : "hidden"}
               variants={variantsGoUp}
             >
               <h3 className="sign_title">It is a long established fact that</h3>

@@ -4,17 +4,24 @@ import PhoneIcon from "../../assets/icons/phone_icon.svg";
 //utils
 import { motion } from "framer-motion";
 import { variantsGoUp } from "../../utils/framerMotion";
+import { useInView } from "react-intersection-observer";
 
 const Phone = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
+
   return (
     <div className="mysection phonesection">
       <div className="mycontainer phonecontainer">
         <div className="w-layout-grid grid">
           <div className="phone_imgbox" />
           <motion.div
+            ref={ref}
             className="phone_contentbox"
             initial="hidden"
-            animate="visible"
+            animate={inView ? "visible" : "hidden"}
             variants={variantsGoUp}
           >
             <div className="phone_content">

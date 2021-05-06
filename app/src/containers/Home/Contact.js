@@ -5,15 +5,21 @@ import ContectItem from "../../components/Home/ContactItem";
 //utils
 import { motion } from "framer-motion";
 import { variantsGoUp } from "../../utils/framerMotion";
+import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  });
   return (
     <div id="contact" className="mysection contactsection">
       <div className="mycontainer contactcontainer">
         <motion.div
+          ref={ref}
           className="contact_contentbox"
           initial="hidden"
-          animate="visible"
+          animate={inView ? "visible" : "hidden"}
           variants={variantsGoUp}
         >
           <h3 className="contact_title">
@@ -30,7 +36,7 @@ const Contact = () => {
         <motion.div
           className="w-layout-grid contact_gridbox"
           initial="hidden"
-          animate="visible"
+          animate={inView ? "visible" : "hidden"}
           variants={variantsGoUp}
         >
           <ContactForm />

@@ -304,9 +304,10 @@ input[type="reset"] {
   cursor: pointer;
   -webkit-appearance: button;
 }
+/*
 .w-form {
   margin: 0 0 15px;
-}
+}*/
 .w-form-done {
   padding: 20px;
   text-align: center;
@@ -1814,4 +1815,3 @@ textarea.w-select {
   -moz-box-shadow: 5px 5px 14px -8px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 14px -8px rgba(0, 0, 0, 0.85);
 }
-

@@ -4,7 +4,7 @@ export const variantsGoUp = {
     y: 0,
     transition: { duration: 0.6 },
   },
-  hidden: { opacity: 0, y: 100 },
+  hidden: { opacity: 0, y: 50 },
 };
 export const variantsOpacity = {
   visible: {
