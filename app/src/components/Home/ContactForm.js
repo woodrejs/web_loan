@@ -12,7 +12,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(data);
+
     const validation = true; //validation
     if (validation) {
       // send to serv

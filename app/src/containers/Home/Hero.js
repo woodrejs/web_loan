@@ -1,7 +1,7 @@
 import React from "react";
 //utils
 import { motion } from "framer-motion";
-import { variantsGoUp, variantsBtns } from "../../utils/framerMotion";
+import { variantsGoUp, variantsBtns, variantsNavLink } from "../../utils/framerMotion";
 
 const Hero = () => {
   return (
@@ -23,10 +23,6 @@ const Hero = () => {
             </motion.div>
           </motion.div>
         </div>
-        <a href="#" className="sociallink">
-          find us on
-          <br /> facebook
-        </a>
       </div>
     </div>
   );

@@ -21,6 +21,9 @@ export const variantsBtns = {
     boxShadow: "2px 2px 5px 0px rgba(0,0,0,0.55)",
   },
 };
+export const variantsNavLink = {
+  hover: { y: 4, color: "#FFFFFF" },
+};
 export const variantsItem = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },

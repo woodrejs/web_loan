@@ -4,6 +4,9 @@ import MenuItem from "../../components/Menu/MenuItem";
 import Hamburger from "../../components/Menu/Hamburger";
 //assets
 import LogoIcon from "../../assets/icons/LOGO1.svg";
+//utils
+import { motion } from "framer-motion";
+import { variantsNavLink } from "../../utils/framerMotion";
 
 const Menu = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,6 +33,12 @@ const Menu = () => {
           <MenuItem path="#contact" name="kontakt" />
         </div>
         <Hamburger />
+        <motion.div variants={variantsNavLink} whileHover={variantsNavLink}>
+          <a href="#" className="sociallink">
+            find us on
+            <br /> facebook
+          </a>
+        </motion.div>
       </div>
     </div>
   );

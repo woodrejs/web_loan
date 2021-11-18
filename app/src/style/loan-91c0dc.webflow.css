@@ -191,11 +191,12 @@ p {
 }
 
 .sociallink {
+  /*
   position: absolute;
   left: auto;
   top: 0%;
   right: 0%;
-  bottom: auto;
+  bottom: auto;*/
   padding-top: 23px;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: #261f1f;
@@ -205,13 +206,14 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .navlink {
   padding-right: 40px;
   padding-left: 40px;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  color: #261f1f;
+  color: inherit;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -731,6 +733,9 @@ p {
 .contacct_addresslabel {
   font-weight: 700;
 }
+.hamburgerbox {
+  display: none;
+}
 
 @media screen and (max-width: 991px) {
   .mysection.homesection {
@@ -752,10 +757,11 @@ p {
   }
 
   .sociallink {
+    /*
     left: 20px;
     top: auto;
     right: auto;
-    bottom: 0%;
+    bottom: 0%;*/
     padding-top: 0px;
     padding-right: 20px;
     padding-bottom: 20px;
